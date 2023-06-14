@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome To Backend{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+
+        <link type='text/css' rel='stylesheet' href='{{ asset("asset/css/bootstrap.min.css") }}'>
+        <link type='text/css' rel='stylesheet' href='{{ asset("asset/css/dataTables.bootstrap4.min.css") }}'>
+
+        {% block stylesheets %}
+        {% endblock %}
+
+        <script src="{{ asset("asset/js/jquery.min.js") }}"></script>
+        <script src="{{ asset("asset/js/datatables.min.js") }}"></script>
+
+        {% block javascripts %}
+        {% endblock %}
+    </head>
+    <body>
+        <nav style="border-bottom: 2px solid blue; margin-bottom: 10px;">
+            <div class="container-fluid global-nav">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <h2>Demo Ecommerce</h2>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="pull-right" style="display: inline-flex;">
+                            <h4 style="padding-top: 15px;">Welcome: {{ app.user.username }}</h4>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        {% block body %}{% endblock %}
+    </body>
+</html>

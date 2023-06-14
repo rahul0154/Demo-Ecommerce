@@ -1,0 +1,187 @@
+hr {
+    margin-top: 15px;
+    background-color: #7C7C7C;
+    height: 2px;
+    border-width: 0;
+}
+h3, h4 {
+    margin-top: 0px;
+}
+hgroup {
+    text-align:center;
+    margin-top: 4em;
+}
+input {
+    font-size: 16px;
+    padding: 10px 10px 10px 0px;
+    -webkit-appearance: none;
+    display: block;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
+}
+input:focus {
+    outline: none;
+}
+label {
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: all 0.2s ease;
+}
+input:focus ~ label, input.used ~ label {
+    top: -20px;
+    transform: scale(.75);
+    left: -12px;
+    font-size: 18px;
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.loginDiv {
+    opacity: 95%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px gray;
+    background-color: #FFFFFF;
+}
+
+.group {
+    position: relative;
+    margin: 20px 20px 40px;
+}
+.failureMessage {
+    color: red;
+    display: block;
+    text-align: center;
+    padding: 0px 0px 10px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 9px;
+    margin: .3em 0 1em 0;
+    width: 100%;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.buttonBlue {
+    background-image: linear-gradient(to bottom, #35aa47 0px, #35aa47 100%)
+}
+
+
+
+.listing-section, .cart-section {
+    width: 100%;
+    float: left;
+    padding: 1%;
+    border-bottom: 0.01em solid #dddbdb;
+}
+
+.product {
+    float: left;
+    width: 20%;
+    border-radius: 2%;
+    margin: 1%;
+}
+
+.product:hover {
+    box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2% 2% 0 0;
+}
+
+.prod_image{
+    height: 10em;
+    width: -webkit-fill-available;
+}
+
+.images {
+    height: 10em;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 2% 2% 0 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.images:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+    border-radius: 2%;
+}
+
+/* IMAGES */
+#image-1 {background-image: url("https://sc01.alicdn.com/kf/UT8.CaXX2NXXXagOFbXC/fresh-navel-oranges.jpg");}
+
+#image-2 {background-image: url("https://newenglandapples.files.wordpress.com/2014/10/img_5595.jpg")}
+
+#image-3 {background-image: url("https://sc01.alicdn.com/kf/UT8ovSIXQNaXXagOFbXt/Fresh-Passion-Fruit-with-Best-Price-and.jpg")}
+
+#image-4 {background-image: url("http://www.foodmatters.com/media/images/articles/16-powerful-reasons-to-eat-pineapple.jpg")}
+
+#image-5 {background-image: url("http://membrillo.com.au/wp-content/uploads/2016/11/bg-mango-01.jpg")}
+
+#image-6 {background-image: url("http://ell.h-cdn.co/assets/16/27/980x490/landscape-1467750721-gettyimages-146896572.jpg")}
+
+#image-7 {background-image: url("http://www.hesca.org/wp-content/uploads/2016/08/banana.jpg")}
+
+#image-8 {background-image: url("http://www.baag.com.au/pictures/produce/plums2.jpg")}
+
+#image-9 {background-image: url("https://ecowatchroar-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F9458277%2F1200x600.jpg/2000%2C2000/J9vl96eLQCOEy3Xy/img.jpg")}
+
+#image-10 {background-image: url("https://www.parhlo.com/wp-content/uploads/2016/04/Valencia_market_-_lemons-1940x1454.jpg")}
+
+.item, .price {
+    clear: left;
+    width: 100%;
+    text-align: center;
+}
+
+.description{
+    float: left;
+    clear: left;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.2em auto;
+}
+
+.text-box {
+    width: 100%;
+    float: left;
+    border: 0.01em solid #dddbdb;
+    border-radius: 0 0 2% 2%;
+    padding: 1em;
+    text-align: center;
+}
