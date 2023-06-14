@@ -21,7 +21,7 @@ final class Version20230614062208 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('INSERT INTO user (username, roles, password, first_name, last_name, address, email) VALUES
-        (\'admin2\', \'[\"ROLE_ADMIN\"]\', \'$2y$13$ujwtzKdqUX28x7rSP2PfGe1eZqGEBgS1UQxtGaOR6NSBZZD2w7tES\', \'rahul\', \'rahul\', \'address\', \'rahul@demo.com\');');
+        (\'admin\', \'[\"ROLE_ADMIN\"]\', \'$2y$13$ujwtzKdqUX28x7rSP2PfGe1eZqGEBgS1UQxtGaOR6NSBZZD2w7tES\', \'rahul\', \'rahul\', \'address\', \'rahul@demo.com\');');
 
         $this->addSql("INSERT INTO products (product_name, product_image, list_price, qty_in_stock, part_number, selling_price, product_description)
                           VALUES
