@@ -116,12 +116,12 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .prod_image{
-    height: 10em;
+    height: 15em;
     width: -webkit-fill-available;
 }
 
 .images {
-    height: 10em;
+    height: 15em;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -175,6 +175,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     font-size: 1em;
     text-align: center;
     margin: 0.2em auto;
+    height: 6em;
 }
 
 .text-box {

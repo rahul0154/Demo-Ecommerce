@@ -3,14 +3,14 @@
 {% block body %}
     <div class="container-fluid loginPageContainer">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="row" style="background: #FBFBFB;">
+            <div class="row" style="background: #FBFBFB;margin-bottom: 10px;">
                 <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h4 class="pull-left" style="margin:10px 0px;">&nbsp;Products&nbsp;</h4>
+                    <h3 class="pull-left" style="margin:10px 0px;">&nbsp;Product List&nbsp;</h3>
                 </div>
 
                 <span class="col-lg-8 col-md-8 col-sm-8">
                     <div class="pull-right">
-                        <button style="margin-top:2px;" class="btn btn-default"
+                        <button style="margin-top:2px;" class="btn btn-primary"
                                 onclick='window.location.href="{{ path('app_products_new') }}"'>
                             Add Product
                         </button>
@@ -18,7 +18,8 @@
                 </span>
             </div>
 
-            <table class="table" id="product_table">
+            <table class="table" id="product_table" style="border: 2px solid #357ebd;
+    padding: 10px;">
                 <thead>
                 <tr>
                     <th>Id</th>

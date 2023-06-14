@@ -18,7 +18,7 @@
         {% endblock %}
     </head>
     <body>
-        <nav style="border-bottom: 2px solid blue; margin-bottom: 10px;">
+        <nav style="border-bottom: 2px solid #357ebd; margin-bottom: 10px;">
             <div class="container-fluid global-nav">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4">
@@ -28,6 +28,10 @@
                         <div class="pull-right" style="display: inline-flex;">
                             <h4 style="padding-top: 15px;">Welcome: {{ app.user.username }}</h4>
                             &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button style="margin:10px 0px;" class="btn btn-danger"
+                                    onclick='window.location.href="{{ path('app_logout') }}"'>
+                                Logout
+                            </button>
                         </div>
                     </div>
                 </div>
